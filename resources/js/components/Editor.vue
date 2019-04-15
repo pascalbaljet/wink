@@ -1,6 +1,7 @@
 <script type="text/ecmascript">
     import _ from 'lodash';
     import Quill from 'quill';
+    import { ImageResize } from 'quill-image-resize-module';
     import ImageUploader from './editorComponents/ImageUploader.vue';
     import HTMLEmbedder from './editorComponents/HTMLEmbedder.vue';
     import ImageBlot from './editorComponents/ImageBlot.js';
@@ -51,6 +52,7 @@
                 Quill.register(ImageBlot, true);
                 Quill.register(DividerBlot, true);
                 Quill.register(HTMLBlot, true);
+                Quill.register('modules/imageResize', ImageResize);
 
                 const icons = Quill.import('ui/icons');
                 icons.header[3] = require('!html-loader!quill/assets/icons/header-3.svg');
