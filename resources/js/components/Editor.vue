@@ -49,7 +49,7 @@
              * Create an instance of the editor.
              */
             createEditor(){
-                Quill.register(ImageBlot, true);
+                // Quill.register(ImageBlot, true);
                 Quill.register(DividerBlot, true);
                 Quill.register(HTMLBlot, true);
                 Quill.register('modules/imageResize', ImageResize);
