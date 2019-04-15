@@ -66,7 +66,10 @@
                             [{'list': 'ordered'}, {'list': 'bullet'}, 'link'],
                             ['blockquote', 'code-block'],
 //                        [{'direction': 'rtl'}],
-                        ]
+                        ],
+                        imageResize: {
+                            displaySize: true
+                        }
                     },
                     theme: 'bubble',
                     scrollingContainer: 'html, body',
